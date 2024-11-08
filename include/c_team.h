@@ -33,6 +33,6 @@ void drive() {
 	int right = master.get_analog(pros::E_CONTROLLER_ANALOG_RIGHT_Y);
 	bool b = master.get_digital(pros::E_CONTROLLER_DIGITAL_B);
 
-	left_front.move_voltage(left * MOVE_VOLT * 0.5 *!b);
-	right_front.move_voltage(right * -MOVE_VOLT * 0.5*!b);
+	left_front.move_voltage(left * MOVE_VOLT * 1.0 *!b);
+	right_front.move_voltage(right * -MOVE_VOLT * 1.0*!b);
 }
